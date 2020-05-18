@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios - ejemplo n&ordm;1</title>
+    <style type="text/css">
+    body {background-color: #ffffaa;}
+    h3 {text-align: center;
+        font-weight: bold;
+        font-size: 16pt;
+        color: blue;
+    }
+    hr {background-color: blue;}
+    </style>
+</head>
+<body>
+    <h3>Ejemplo formulario</h3>
+    <form method="get" action="mailto:alexgp7191@gmail.com" enctype="text/plain">
+        Digita tu nombre y apellidos:&nbsp;
+        <input type="text" name="nombre" size="40"  ><br><br> Elige un tema: <br>
+        <input type="radio" name="tema" value="ciencia" checked>ciencia <br>
+        <input type="radio" name="tema" value="arte">arte <br>
+        <input type="radio" name="tema" value="literatura"> Literatura <br><br> Marca tus aficiones: <br>
+        <input type="checkbox" name="aficion" value="deporte" checked> Deporte <br>
+        <input type="checkbox" name="aficion" value="musica" checked> M&uacute;sica<br>
+        <input type="checkbox" name="aficion" value="lectura" checked> Lectura <br>
+        <input type="checkbox" name="aficion" value="pesca" checked> Pesca<br>
+        <input type="checkbox" name="aficion" value="pasear" checked> Pasear <br>
+        <input type="checkbox" name="aficion" value="cine" checked> Cine <br>
+        Digita la contrase&ntilde;a de usuario:&nbsp;
+        <input type="password" name = "password" size="10" maxlength="10"> <br><br>
+        <input type="submit" value="enviar datos">
+        <input type="reset" value="borrar datos"><br><br>
+    </form>
+</body>
+</html>

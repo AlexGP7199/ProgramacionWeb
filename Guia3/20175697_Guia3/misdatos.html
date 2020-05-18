@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de datos personales</title>
+    <style>
+        body {
+            background-color: #5C4033; color: #CCAFAF;
+        }
+        h1{
+            text-align: center;
+            font-size: 20pt;
+        }
+        hr{
+            background-color: #CCAFAF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Datos personales</h1>
+    <hr size ="5">
+    <br><br>
+    Llena el siguiente formulario con los datos que se solicitan, por favor:
+    <form method="POST" action="mailto:alexgp7191@gmail.com" enctype="text/plain">
+        <table border="0">
+            <tr>
+                <td><b>Nombre: </b></td>
+                <td><input type="text" maxlength="20" size="15" name="nombre"></td>
+            </tr>
+            <tr>
+                <td><b>Apellido: </b></td>
+                <td><input type="text" maxlength="20" size="15" name="apellido"></td>
+            </tr>
+            <tr>
+                <td><b>Nacionalidad: </b></td>
+                <td>
+                    <SELECT>
+                        <option value="Salvadoreño">Salvadore&ntilde;o(a)</option>
+                        <option value="Hondureño">Hondure&ntilde;o(a)</option>
+                        <option value="Guatemalteco">Guatemalteco(a)</option>
+                        <option value="Costarricense">Costarricense</option>
+                        <option value="Nicaraguense">Nicarag&uuml;ense</option>
+                        <option value="Panameño">Paname&ntilde;o(a)</option>
+                    </SELECT>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Sexo: </b></td>
+                <td>
+                    <input type="radio" name="sexo" value="mas" checked><b>Masculino</b><br>
+                    <input type="radio" name="sexo" value="fem"><b>Femenino</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Direcci&oacute;n: </b>
+                </td>
+                <td><input type="text" maxlength="40" size="30" name="direccion" ></td>
+            </tr>
+            <tr>
+                <td><b>Tel&eacute;fono</b></td>
+                <td><input type="text" maxlength="11" size="10" name="telefono"></td>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="image" name="botonenviar" src="img/boton1.gif" alt="Enviar Formulario">
+                        &nbsp;&nbsp;&nbsp;
+                        <input type="reset" name="botoncancelar" value="Restablecer">
+                    </td>
+                </tr>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
