@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de datos </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <h1>Datos personales</h1>
+    <hr size ="5">
+    <br><br>
+    Llena el siguiente formulario con los datos que se solicitan, por favor: <br> <br>
+    <form method="GET" action="mailto:alexgp7191@gmail.com" enctype="text/plain">
+         Digita tu nombre:&nbsp;
+        <input type="text" name="nombre" size="40"><br><br>
+        Digita tu contraseña:&nbsp;
+        <input type="password" name="password" size="5"><br><br>
+        Enviame una foto tuya:&nbsp;
+        <input type="file" name="myPicture" id="myPicture"> <br> <br>
+        Este manual te parece: <br>
+        <input type="radio" name="opinion" value="Muy Bueno" checked>Muy bueno<br>
+        <input type="radio" name="opinion" value="Bueno">Bueno<br>
+        <input type="radio" name="opinion" value="Malo"> Malo<br>
+        <input type="radio" name="opinion" value="Muy Malo">Muy malo<br>
+        <br>
+        <input type="checkbox" name="actualizacion" value="recibir actualizacion"> Avisame de actualizaciones <br>
+        <input type="submit" value="enviar datos" id="enter">
+        <input type="reset" value="borrar datos" id="reset"><br><br>
+    </form>
+</body>
+</html>
