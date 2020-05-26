@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <form name="miformulario" method="POST" action="mailto:alexgp7191@gmail.com" enctype="text/plain">
+            <div class="DP">
+                <h1>Libro de visitas</h1>
+                <p>Datos Personales</p>
+                Nombre:&nbsp;
+                <input type="text" name="nombre" maxlength="20" size="15"> <br>
+                Apellidos:&nbsp;
+                <input type="text" name="apellidos" maxlength="40" size="25"><br>   
+            </div>
+            <div class="pseuC">
+                Indica el pseud&oacute;minio y contraseña: <br>
+                Peud&oacute;minio&nbsp;
+                <input type="text" name="peud&oacute;minio" maxlength="16" size="5"></td>
+                Contraseña&nbsp;
+                <input type="password" name="password" max="12" size="6">
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th><p>Otros datos:</p></th>
+                        <tr>
+                            <th>Edad</th>
+                            <th>Donde Vives?</th>
+                            <th>Aficiones</th>
+                        </tr>
+                        
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="edad" >0-10</td>
+                        <td> <input type="radio" name="ciudad" >Santiago</td>
+                        <td><input type="checkbox" name="aficion">Musica</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="edad" >11-20</td>
+                        <td> <input type="radio" name="ciudad" >Santo Domingo</td>
+                        <td><input type="checkbox" name="aficion">Deportes</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="edad" >21-30</td>
+                        <td> <input type="radio" name="ciudad" >La Romana</td>
+                        <td><input type="checkbox" name="aficion">Pintura</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="edad" >31-40</td>
+                        <td> <input type="radio" name="ciudad" >San Cristobal</td>
+                        <td><input type="checkbox" name="aficion">Lectura</td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="edad" >41-mas</td>
+                        <td> <input type="radio" name="ciudad" >Otros <input type="text" name="cuidad"></td>
+                        <td><input type="checkbox" name="aficion">Otros <input type="text" name="aficion"></td>
+                    </tr>
+                </table>
+            </div>
+            <input type="submit" value="enviar datos" id="enter">
+            <input type="reset" value="borrar datos" id="reset">
+        </form>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Datos Personales</title>
+</head>
+<body>
+<div class="jumbotron text-center">
+  <h1>Inscribete totalmente gratis</h1>
+  <p>Recibe notifaciones de nuestros updates!</p> 
+</div>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"> Datos a Rellenar</h3>
+        </div>
+        <div class="panel-body">
+            <form method="POST" action="mailto:alexgp7191@gmail.com" name="DPForm">
+                <div class="form-group">
+                    <label>Email address</label>
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon">@</span>
+                        <input type="email" class="form-control" placeholder="Correo Electronico" name="email">
+                    </div>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon">*</span>
+                        <input type="password" class="form-control" placeholder="password" name="password">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Sexo</label>
+                    <div class="input-group-prepend">
+                    <input type="radio" aria-label="radio" name="sexo" value="Masculino"> Masculino
+                    <input type="radio" aria-label="radio" name="sexo" value="Femenino"> Femenino
+                    </div>
+                    </div>
+                    <br>
+                    <!-- Moddle-->
+                    <div class="container">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dialogo1">SEND</button>
+                        <div class="modal fade" id="dialogo1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <!-- cabecera del diálogo -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Estas seguro de enviar los datos?</h4>
+                                        <button type="button" class="close" data-dismiss="modal">X</button>
+                                    </div>
+                                    <!-- cuerpo del diálogo -->
+                                    <div class="modal-body">
+                                        Como ya se habia mencionado, sus datos no seran compartidos con nadie mas ;).
+                                    </div>
+                                    <!-- pie del diálogo -->
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-secondary">Submit</a></button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="../pagWebBootstrap.html" role="button" class="btn btn-secondary">Volver a Inicio</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="../pagWebBootstrap.html" role="button" class="btn btn-secondary">Volver a Inicio</a>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

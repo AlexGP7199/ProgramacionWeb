@@ -1,0 +1,17 @@
+table.table1{
+    text-align: center;
+    border-color: #333;
+    font-family: Arial, Helvetica, sans-serif,0.9em,#E6F3FF;
+    
+
+}
+td#number:hover{
+    background-color: #FFFF66;
+}       
+td#nP{
+   background: url(../img/fondogris.jpg);
+   background-size: auto;
+}
+.body tr:nth-child(odd){
+    background-color: #FFFFCC;
+}
