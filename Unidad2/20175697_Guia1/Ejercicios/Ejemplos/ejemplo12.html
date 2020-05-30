@@ -1,0 +1,24 @@
+<script>
+    var num1,num2;
+    num1=prompt('Ingrese el primer numero:','');
+    num2=prompt('Ingrese el segundo numero','');
+    num1=parseInt(num1);
+    num2=parseInt(num2);
+    if(num1>num2){
+        var suma, diferencia;
+        suma=num1+num2;
+        diferencia=num1-num2;
+        document.write('La suma es:'+suma);
+        document.write('<br>');         
+        document.write('la diferencia es '+diferencia);
+    }
+    else
+    {
+        var producto, divsion;
+        producto=num1*num2;
+        division=num1/num2;
+        document.write('El producto es '+producto);
+        document.write('<br>');
+        document.write('La division del primero respecto al segundo es: '+divsion);
+    }
+</script>
