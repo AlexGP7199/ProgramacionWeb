@@ -15,6 +15,56 @@ utilizado en Web. Entre los principios generalmente incluyen:
  Por otra parte, para poder enlazar estos dos archivos, se hace uso de la etiqueta <script> y se le asigna el src a el 
  .js correspondiente.
 
+ Ejemplo:
+
+ en el index.html se pudiera tener:
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous" />
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Ingrese el numero deseado</h1>
+        <form id="addNum">
+            <div>
+                <label> Ingrese un numero no mas de tres digitos</label>
+                <input type="text"  maxlength="3" id="N" class = "u-full-width">
+            </div>
+            <div>
+                <input type="submit" name="submit" id="submit" class = "u-full-width">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
+
+y en el app.js se puede tener:
+
+class FindDigits {
+    howManyDigits(N){
+        return N.toString().length;
+    }
+}
+
+document.getElementById('addNum').addEventListener('submit',function(e){
+    //Get values
+    const N = document.getElementById('N').value;
+    if( (N < 0) || ((N % 1) != 0)){
+        alert("Solo aceptamos numeros enteros positivos");
+    }else{
+        const FD = new FindDigits();
+        var count = FD.howManyDigits(N);
+        alert(`El numero ingresado tiene ${count} digitos`);
+    }
+    e.preventDefault();
+});
+
 
  2. Null y undefined en JavaScript
 
