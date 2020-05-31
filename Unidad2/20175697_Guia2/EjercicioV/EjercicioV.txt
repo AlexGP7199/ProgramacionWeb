@@ -1,0 +1,36 @@
+1. Investigacion sobre JavaScript no obstructivo.
+
+Es un paradigma floreciente en el uso del lenguaje de programacion JavaScript,
+utilizado en Web. Entre los principios generalmente incluyen:
+
+-Separacion de la funcionalidad JavaScript de las capas de estructuras/contenido y de presentacion de una pagina.
+
+-Uso de buenas practicas a fin de evitar los problemas de incompatibilidad de la programacion
+ tradicional en JavaScript (tales como inconsistencias entre navegadores y falta de escalabilidad).
+
+ No obstante, uno de los objetivos de estos es serparar lo que es contenido con comporatmiento.
+ Con esto, se puede tener un codigo html y el codigo JS en otra para asi evitar futuros y errores y hacer mas mantenible
+ nuestro codigo. En el HTML, se encuentra todo lo que es contenido y en el JS, estarian todas las funcionalidades.
+
+ Por otra parte, para poder enlazar estos dos archivos, se hace uso de la etiqueta <script> y se le asigna el src a el 
+ .js correspondiente.
+
+
+ 2. Null y undefined en JavaScript
+
+ Null ---> Significa que la variable no tiene ningun valor.
+
+ Undefined --> es el valor que tiene una variable a la cual no se le ha asignado ningun valor. Esta es la forma en que 
+               JS, dice que no sabe que es esa variable.
+
+No obstante, una diferencia entre ellos es que undifined es asignado por JS y solo por JS de forma automatica
+como valor inicial en caso de que no le asignes un valor. Sin embargo, el valor Null, debe ser asignado mediante 
+el codigo que escribamos.
+
+
+Bibliografia:
+
+-- codigonaranja.com/2018/javascript-diferencia-entre-null-y-undefined
+-- https://es.wikipedia.org/wiki/JavaScript_no_obstructivo
+-- https://unoyunodiez.wordpress.com/2011/09/07/diferencias-entre-null-y-undefined-en-javascript/
+-- https://uxespanol.blogspot.com/2007/11/se-dice-javascript-no-molesto.html
